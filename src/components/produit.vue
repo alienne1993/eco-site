@@ -1,0 +1,646 @@
+<template>
+    <div id="produit">
+        <div class="row">
+        <div class="col-md-2 col-xs-12" v-for="item in produits" :key="item.id" >
+        <div class="card-container" >
+         <div class="card">
+             <div class="front">
+                 <div class="cover">
+                     <img src="../assets/img.jpg"/>
+                 </div>
+                 <div class="user">
+                     <img class="img-circle" src="../assets/img.jpg"/>
+                 </div>
+                 <div class="content">
+                     <div class="main">
+                         <h3 class="name">Inna Corman</h3>
+                         <p class="profession">Product Manager</p>
+
+                         <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                     </div>
+                     <div class="footer">
+                         <div class="rating">
+                             <i class="fa fa-mail-forward"></i> Auto Rotation
+                         </div>
+                     </div>
+                 </div>
+             </div> <!-- end front panel -->
+             <div class="back">
+                 <div class="header">
+                     <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                 </div>
+                 <div class="content">
+                     <div class="main">
+                         <h4 class="text-center">Job Description</h4>
+                         <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                         <div class="stats-container">
+                             <div class="stats">
+                                 <h4>235</h4>
+                                 <p>
+                                     Followers
+                                 </p>
+                             </div>
+                             <div class="stats">
+                                 <h4>114</h4>
+                                 <p>
+                                     Following
+                                 </p>
+                             </div>
+                             <div class="stats">
+                                 <h4>35</h4>
+                                 <p>
+                                     Projects
+                                 </p>
+                             </div>
+                         </div>
+
+                     </div>
+                 </div>
+                 <div class="footer">
+                     <div class="social-links text-center">
+                         <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                         <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                         <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                     </div>
+                 </div>
+             </div> <!-- end back panel -->
+         </div> <!-- end card -->
+     </div> <!-- end card-container -->
+        </div>
+          <div class="col-md-2 col-xs-12">
+        <div class="card-container" >
+         <div class="card">
+             <div class="front">
+                 <div class="cover">
+                     <img src="../assets/img.jpg"/>
+                 </div>
+                 <div class="user">
+                     <img class="img-circle" src="../assets/img.jpg"/>
+                 </div>
+                 <div class="content">
+                     <div class="main">
+                         <h3 class="name">Inna Corman</h3>
+                         <p class="profession">Product Manager</p>
+
+                         <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                     </div>
+                     <div class="footer">
+                         <div class="rating">
+                             <i class="fa fa-mail-forward"></i> Auto Rotation
+                         </div>
+                     </div>
+                 </div>
+             </div> <!-- end front panel -->
+             <div class="back">
+                 <div class="header">
+                     <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                 </div>
+                 <div class="content">
+                     <div class="main">
+                         <h4 class="text-center">Job Description</h4>
+                         <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                         <div class="stats-container">
+                             <div class="stats">
+                                 <h4>235</h4>
+                                 <p>
+                                     Followers
+                                 </p>
+                             </div>
+                             <div class="stats">
+                                 <h4>114</h4>
+                                 <p>
+                                     Following
+                                 </p>
+                             </div>
+                             <div class="stats">
+                                 <h4>35</h4>
+                                 <p>
+                                     Projects
+                                 </p>
+                             </div>
+                         </div>
+
+                     </div>
+                 </div>
+                 <div class="footer">
+                     <div class="social-links text-center">
+                         <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                         <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                         <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                     </div>
+                 </div>
+             </div> <!-- end back panel -->
+         </div> <!-- end card -->
+     </div> <!-- end card-container -->
+        </div>  <div class="col-md-2 col-xs-12">
+        <div class="card-container" >
+         <div class="card">
+             <div class="front">
+                 <div class="cover">
+                     <img src="../assets/img.jpg"/>
+                 </div>
+                 <div class="user">
+                     <img class="img-circle" src="../assets/img.jpg"/>
+                 </div>
+                 <div class="content">
+                     <div class="main">
+                         <h3 class="name">Inna Corman</h3>
+                         <p class="profession">Product Manager</p>
+
+                         <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                     </div>
+                     <div class="footer">
+                         <div class="rating">
+                             <i class="fa fa-mail-forward"></i> Auto Rotation
+                         </div>
+                     </div>
+                 </div>
+             </div> <!-- end front panel -->
+             <div class="back">
+                 <div class="header">
+                     <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                 </div>
+                 <div class="content">
+                     <div class="main">
+                         <h4 class="text-center">Job Description</h4>
+                         <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                         <div class="stats-container">
+                             <div class="stats">
+                                 <h4>235</h4>
+                                 <p>
+                                     Followers
+                                 </p>
+                             </div>
+                             <div class="stats">
+                                 <h4>114</h4>
+                                 <p>
+                                     Following
+                                 </p>
+                             </div>
+                             <div class="stats">
+                                 <h4>35</h4>
+                                 <p>
+                                     Projects
+                                 </p>
+                             </div>
+                         </div>
+
+                     </div>
+                 </div>
+                 <div class="footer">
+                     <div class="social-links text-center">
+                         <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                         <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                         <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                     </div>
+                 </div>
+             </div> <!-- end back panel -->
+         </div> <!-- end card -->
+     </div> <!-- end card-container -->
+        </div>
+        </div>
+    </div>
+</template>
+<script scoped>
+export default {
+    name:"myproduit",
+    data(){
+        return{
+            produit:{},
+            url:"http:/localhost:3000/produit/All",
+        }
+    },
+
+    created:function(){
+        this.getproduit();
+    
+    },
+    methods: {
+
+        getproduit(){
+            let url="http://localhost:3000/produit/All";
+            this.axios.get(url).then((res)=>{
+                console.log(res);
+                this.produits= res.data
+            }
+            )
+        },
+        addproduit(){
+            console.log(this.url)
+
+            this.axios.post("http:/localhost:3000/produit/All",this.produit)
+            .then((res)=>{
+              console.log(res)  
+            })
+            .catch(err =>{
+                console.log(err)
+            })
+        }
+    },
+    
+}
+</script>
+<style  scoped>
+body {
+	margin-top: 60px;
+	font-size: 14px;
+	font-family: "Helvetica Nueue",Arial,Verdana,sans-serif;
+	background-color: #E5E9ED;
+}
+.btn:hover,
+.btn:focus,
+.btn:active{
+    outline: 0 !important;
+}
+/* entire container, keeps perspective */
+.card-container {
+	  -webkit-perspective: 800px;
+   -moz-perspective: 800px;
+     -o-perspective: 800px;
+        perspective: 800px;
+        margin-bottom: 30px;
+}
+/* flip the pane when hovered */
+.card-container:not(.manual-flip):hover .card,
+.card-container.hover.manual-flip .card{
+	-webkit-transform: rotateY( 180deg );
+-moz-transform: rotateY( 180deg );
+ -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+
+.card-container.static:hover .card,
+.card-container.static.hover .card {
+	-webkit-transform: none;
+-moz-transform: none;
+ -o-transform: none;
+    transform: none;
+}
+/* flip speed goes here */
+.card {
+	 -webkit-transition: -webkit-transform .5s;
+   -moz-transition: -moz-transform .5s;
+     -o-transition: -o-transform .5s;
+        transition: transform .5s;
+-webkit-transform-style: preserve-3d;
+   -moz-transform-style: preserve-3d;
+     -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	-webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+     -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #FFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+		-webkit-transform: rotateY( 180deg );
+   -moz-transform: rotateY( 180deg );
+     -o-transform: rotateY( 180deg );
+        transform: rotateY( 180deg );
+        z-index: 3;
+}
+
+.back .btn-simple{
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+}
+/*        Style       */
+
+
+.card{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 4px;
+    color: #444444;
+}
+.card-container, .front, .back {
+	width: 100%;
+	height: 420px;
+	border-radius: 4px;
+}
+.card .cover{
+    height: 105px;
+    overflow: hidden;
+    border-radius: 4px 4px 0 0;
+}
+.card .cover img{
+    width: 100%;
+}
+.card .user{
+    border-radius: 50%;
+    display: block;
+    height: 120px;
+    margin: -55px auto 0;
+    overflow: hidden;
+    width: 120px;
+}
+.card .user img{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 4px solid #FFFFFF;
+    width: 100%;
+}
+
+.card .content{
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    padding: 10px 20px 20px;
+}
+.card .content .main {
+    min-height: 160px;
+}
+.card .back .content .main {
+    height: 215px;
+}
+.card .name {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 10px 0 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+.card h5{
+    margin: 5px 0;
+    font-weight: 400;
+    line-height: 20px;
+}
+.card .profession{
+    color: #999999;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card .footer {
+    border-top: 1px solid #EEEEEE;
+    color: #999999;
+    margin: 30px 0 0;
+    padding: 10px 0 0;
+    text-align: center;
+}
+.card .footer .social-links{
+    font-size: 18px;
+}
+.card .footer .social-links a{
+    margin: 0 7px;
+}
+.card .footer .btn-simple{
+    margin-top: -6px;
+}
+.card .header {
+    padding: 15px 20px;
+    height: 90px;
+}
+.card .motto{
+    border-bottom: 1px solid #EEEEEE;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.card .stats-container{
+	width: 100%;
+	margin-top: 50px;
+}
+.card .stats{
+	display: block;
+	float: left;
+	width: 33.333333%;
+	text-align: center;
+}
+
+.card .stats:first-child{
+	border-right: 1px solid #EEEEEE;
+}
+.card .stats:last-child{
+	border-left: 1px solid #EEEEEE;
+}
+.card .stats h4{
+	font-weight: 300;
+	margin-bottom: 5px;
+}
+.card .stats p{
+	color: #777777;
+}
+/*      Just for presentation        */
+
+.title{
+    color: #506A85;
+    text-align: center;
+    font-weight: 300;
+    font-size: 44px;
+    margin-bottom: 90px;
+    line-height: 90%;
+}
+.title small{
+    font-size: 17px;
+    color: #999;
+    text-transform: uppercase;
+    margin: 0;
+}
+.space-30{
+	height: 30px;
+	display: block;
+}
+.space-50{
+    height: 50px;
+    display: block;
+}
+.space-200{
+    height: 200px;
+    display: block;
+}
+.white-board{
+    background-color: #FFFFFF;
+    min-height: 200px;
+    padding: 60px 60px 20px;
+}
+.ct-heart{
+    color: #F74933;
+}
+
+ pre.prettyprint{
+    background-color: #ffffff;
+    border: 1px solid #999;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: left;
+}
+.atv, .str{
+    color: #05AE0E;
+}
+.tag, .pln, .kwd{
+     color: #3472F7;
+}
+.atn{
+  color: #2C93FF;
+}
+.pln{
+   color: #333;
+}
+.com{
+    color: #999;
+}
+
+.btn-simple{
+    opacity: .8;
+    color: #666666;
+    background-color: transparent;
+}
+
+.btn-simple:hover,
+.btn-simple:focus{
+    background-color: transparent;
+    box-shadow: none;
+    opacity: 1;
+}
+.btn-simple i{
+    font-size: 16px;
+}
+
+.navbar-brand-logo{
+    padding: 0;
+}
+.navbar-brand-logo .logo{
+    border: 1px solid #333333;
+    border-radius: 50%;
+    float: left;
+    overflow: hidden;
+    width: 60px;
+}
+.navbar .navbar-brand-logo .brand{
+    color: #FFFFFF;
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 60px;
+}
+.navbar-default .navbar-brand-logo .brand{
+    color: #555;
+}
+
+
+/*       Fix bug for IE      */
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .front, .back{
+        -ms-backface-visibility: visible;
+        backface-visibility: visible;
+    }
+
+    .back {
+        visibility: hidden;
+        -ms-transition: all 0.2s cubic-bezier(.92,.01,.83,.67);
+    }
+    .front{
+        z-index: 4;
+    }
+    .card-container:not(.manual-flip):hover .back,
+    .card-container.manual-flip.hover .back{
+        z-index: 5;
+        visibility: visible;
+    }
+}
+
+div[class~="products"] img {
+    display: inline-block;
+    width: 40%;
+}
+
+.desc-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 58%;
+    padding-top: 10px;
+}
+
+/*************FEATURED PRODUCTS*****************/
+div[class~="products"]:nth-child(4n+1) {
+    width: 300px;
+    height: 455px;
+    text-align: center;
+
+}
+
+div[class~="products"]:nth-child(4n+1) img {
+    width: 90% !important;
+}
+
+div[class~="products"]:nth-child(4n+1) .desc-block {
+    width: 100% !important;
+}
+
+div[class~="products"]:nth-child(4n+1) .share-icons {
+    margin: 0.2em !important;
+}
+
+/***************IMAGE FLIP*************/
+.image-3d-container {
+  height: 280px;
+  position: relative;
+  perspective: 800px;
+  padding-top: 10px;
+}
+
+.image-flip {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.image-flip .image-back {
+  transform:rotateX(180deg);
+}
+
+.image-flip img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  backface-visibility: hidden;
+  left: 15px;
+}
+
+.image-flip:hover {
+  transform:rotateX(180deg);
+}
+/*************SHARE ICONS**************/
+.share-icons {
+    font-family: FontAwesome, Arial, sans-serif;
+    font-size: 2em;
+    color: #2D2C2C;
+    text-align: right;
+    margin: 0.5em 0.3em;
+    
+
+}
+
+div[class$="share"] {
+    display: inline-block;
+}
+
+</style>
