@@ -1,6 +1,9 @@
 <template>
-<div class="col-md-12">
-  <mygallerie :images="image"></mygallerie>
+<div >
+    <div class="col-md-12"> 
+        <mygallerie :images="image"></mygallerie>
+        </div>
+ 
   <myproduit></myproduit>
 </div>
 </template>

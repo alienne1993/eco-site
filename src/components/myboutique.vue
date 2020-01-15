@@ -1,7 +1,7 @@
 <template>
     <div class="container">
     <h3 class="h3">BOUTIQUE</h3>
-    <div class="row">
+    <div class="flex">
         <div class="col-md-3 col-sm-6" v-for="item in produits" :key="item.id">
             <div class="product-grid2">
                 <div class="product-image2">
@@ -85,7 +85,8 @@ export default {
       //je vide mon LS avec clear
             alert(`le produit ${nom} a bien été ajouté dans votre panier!`);
       console.log(this.Panier);
-      localStorage.clear();
+      // removeitem est pour suprime localstorge 
+      localStorage.removeItem("panier");
       //on verifie la lg du tableauPanier, s'il est vide on ajoute le produit
       //sans vérification de la présence de ce produit
 
@@ -151,7 +152,10 @@ export default {
 </script>
 
 <style scoped>
-
+.flex{
+  flex-direction: column;
+  justify-content: space-between;
+}
 .product-grid2{background: #48ED15;
 background: -moz-linear-gradient(45deg, #48ED15 0%, #FFFFFF 37%, #F53518 100%);
 background: -webkit-linear-gradient(45deg, #48ED15 0%, #FFFFFF 37%, #F53518 100%);

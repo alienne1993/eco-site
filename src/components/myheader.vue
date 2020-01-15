@@ -1,9 +1,9 @@
 <template>
-    <div class="row header" >
+    <div class="header" >
  <!--<img src="../assets/tumblr_static_tumblr_static__640.gif" width="100%" height="200px" >-->
         <h4>eco-art-recyclable</h4>
         <h2>l'eco art de <br> geek-unilicorne </h2>
-        <img class="lo" src="../assets/logoEmilie.png" width="150px">
+        <img class="lo" src="../assets/logoEmilie.png">
     </div>
 
 </template>
@@ -14,11 +14,18 @@ export default {
 }
 </script>
 <style scoped>
-.h{
-    width: 100%;
+
+*{
+    margin: 0px;
+    padding: 0px;
+     box-sizing: border-box;
 }
+div .lo{
+     width:150px;
+}
+
 h4{
- text-shadow: 0 -2px 10px #ff0, 5px -3px 13px rgba(242,255,73,0.9);   
+ text-shadow: 0 -2px 10px #ff0, 5px -3px 13px rgba(242,255,73,0.9);
 color: aliceblue;
   position: absolute;
   left:15px;
@@ -35,11 +42,11 @@ text-transform: lowercase;
 transform: rotate(-35deg)
 }
 
-h2{ 
-    text-shadow: 0 -2px 10px #ff0, 5px -3px 13px rgba(242,255,73,0.9);   
+h2{
+    text-shadow: 0 -2px 10px #ff0, 5px -3px 13px rgba(242,255,73,0.9);
 color: aliceblue;
   position: absolute;
-  left:1383px;
+right: 50px;
   top:70px;
  font-family: "Comic Sans MS", cursive, sans-serif;
 font-size: 20px;
@@ -56,12 +63,16 @@ transform: rotate(35deg)
     display:flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    background-image: url("../assets/tumblr_static_tumblr_static__640.gif")  
+    background-image: url("../assets/tumblr_static_tumblr_static__640.gif");
+    width:100%;
 }
 @media screen and (min-width:320px) and (max-width:1200px){
-
+div .lo{
+     width:20%;
+     height:50%;
+}
 h4{
- text-shadow: 0 -2px 10px #ff0, 5px -3px 13px rgba(242,255,73,0.9);   
+ text-shadow: 0 -2px 10px #ff0, 5px -3px 13px rgba(242,255,73,0.9);
 color : aliceblue;
  display: none;
   font-family: "Comic Sans MS", cursive, sans-serif;
@@ -76,8 +87,8 @@ text-transform: lowercase;
 transform: rotate(-35deg)
 }
 
-h2{ 
-    text-shadow: 0 -2px 10px #ff0, 5px -3px 13px rgba(242,255,73,0.9);   
+h2{
+    text-shadow: 0 -2px 10px #ff0, 5px -3px 13px rgba(242,255,73,0.9);
 color: aliceblue;
  display: none;
  font-family: "Comic Sans MS", cursive, sans-serif;
@@ -95,7 +106,7 @@ transform: rotate(35deg)
     display:flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    background-image: url("../assets/tumblr_static_tumblr_static__640.gif")  
+    background-image: url("../assets/tumblr_static_tumblr_static__640.gif")
 }
 
 }

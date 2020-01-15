@@ -1,27 +1,31 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import './registerServiceWorker'
-import axios from 'axios'
-import VueAxios from "vue-axios"
-import BootstrapVue from 'bootstrap-vue'
-import bootstrap from 'bootstrap'
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+import './registerServiceWorker';
+import axios from 'axios';
+import VueAxios from "vue-axios";
+import BootstrapVue from 'bootstrap-vue';
+import bootstrap from 'bootstrap';
+import VueCardPayment from 'vue-card-payment'
+// You need a specific loader for CSS files like https://github.com/webpack/css-loader
+import 'vue-card-payment/dist/vue-card-payment.css'
 
-Vue.use(BootstrapVue, bootstrap)
-Vue.use(VueAxios,axios)
+//Vue.use(VueCardPayment)
 
-import 'bootstrap-css-only/css/bootstrap.min.css'
-import 'mdbvue/build/css/mdb.css'
-import store from './store'
+Vue.use(BootstrapVue, bootstrap);
+Vue.use(VueAxios,axios);
 
-//import 'bootstrap/dist/css/bootstrap.css'
-//import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbvue/build/css/mdb.css';
+import store from './store';
 
-Vue.config.productionTip = false
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+Vue.config.productionTip = false;
 
 new Vue({
   router,
   store,
   render: h => h(App)
-}).$mount('#app')
-
+}).$mount('#app');

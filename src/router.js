@@ -1,17 +1,22 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import accuiel from './views/accuiel.vue'
-import gallerie from './views/gallerie.vue'
-import client from './views/client.vue'
-import boutique from './views/boutique'
-import conseils from './views/conseils'
-import don from './views/don'
-import contient  from './components/contient'
-//import livraison from './components/livraison'
-import panier from './views/panier'
-import store from './store'
+import Vue from 'vue';
+import Router from 'vue-router';
+import accuiel from './views/accuiel.vue';
+import gallerie from './views/gallerie.vue';
+import client from './views/client.vue';
+import boutique from './views/boutique';
+import conseils from './views/conseils';
+import don from './views/don';
+import contient  from './components/contient';
+import livraison from './views/livraison';
+import payement from './views/payement';
+import panier from './views/panier';
+import adminhome from './views/adminhome';
+import adminproduit from './views/adminproduit';
+import modifierclientAdmin from './views/modifierclientAdmin';
+import clientAdmin from './views/clientAdmin';
+import store from './store';
 
-Vue.use(Router)
+Vue.use(Router);
 
 const routes = [
   {
@@ -32,12 +37,12 @@ const routes = [
 {
   path:'/boutique',
   name:'boutique',
-  component:boutique 
+  component:boutique
 },
 {
   path:'/conseil',
   name:'conseil',
-  component:conseils 
+  component:conseils
 },
 {path:'/contient',
   name:'contient',
@@ -52,8 +57,34 @@ const routes = [
  path:'/don',
   name:'don',
   component:don,
-}
-]
+},
+{
+  path:'/payement',
+   name:'payement',
+   component:payement,
+ },{
+  path:'/livraison',
+   name:'livraison',
+   component:livraison,
+ },{
+  path:'/adminhome',
+   name:'adminhome',
+   component:adminhome,
+ },{
+  path:'/adminproduit',
+   name:'adminproduit',
+   component:adminproduit,
+ },{
+  path:'/modifierclientAdmin',
+   name:'modifierclientAdmin',
+   component:modifierclientAdmin,
+ },{
+  path:'/clientAdmin',
+   name:'clientAdmin',
+   component:clientAdmin,
+ },
+
+];
 const router = new Router({
   mode: 'history', // a simule un URL
   base: process.env.BASE_URL,
@@ -66,11 +97,11 @@ router.beforeEach((to, from, next) => {
   // si le client sur le panier on verifier sinon on renvoyer sur la page accueil
   if (to.fullPath === '/panier') {
       if (!store.state.accessToken) {
-          next('/panier');
+          next('/');
       }
   }
-  
+
   next();
 });
 
-export default router
+export default router;

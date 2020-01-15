@@ -9,41 +9,41 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Nom</label>  
+  <label class="col-md-4 control-label" for="textinput">Nom</label>
   <div class="col-md-4">
   <input name="textinput" class="form-control input-md" id="textinput"  type="text" placeholder="Nom" v-model="client.nom">
-    
+
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">descritif du don</label>  
+  <label class="col-md-4 control-label" for="textinput">descriptif du don</label>
   <div class="col-md-4">
-  <input name="textinput" class="form-control input-md" id="textinput" type="text" placeholder="descritif" v-model="don.descritif_don" >
-    
+  <input name="textinput" class="form-control input-md" id="textinput" type="text" placeholder="descriptif" v-model="don.descritif_don" >
+
   </div>
 </div>
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">date</label>  
+  <label class="col-md-4 control-label" for="textinput">date</label>
   <div class="col-md-4">
   <input name="textinput" class="form-control input-md" id="textinput" type="text" placeholder="date" v-model="don.date" >
-    
+
   </div>
 </div>
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="E-mail" >E-mail:</label>  
+  <label class="col-md-4 control-label" for="E-mail" >E-mail:</label>
   <div class="col-md-4">
   <input name="E-mail" class="form-control input-md" id="E-mail" type="text" placeholder="E-mail" v-model="client.email" >
-    
+
   </div>
 </div>
 
 
 
-<!-- File Button --> 
+<!-- File Button -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="filebutton">image de l'article</label>
   <div class="col-md-4">
@@ -63,6 +63,7 @@
 </form>
 
 	</div>
+	  <div class="col-md-2 col-xs-12" v-for="item in dons" :key="item.id" ></div>
 </div>
 
 </template>
@@ -73,13 +74,21 @@ export default {
 		return{
 			don:{},
 			client:{},
+			dons:{}
 		}
 	}, created:function(){
         this.getdon();
-    
+
     },
     methods: {
-
+			getdon(){
+					let url="http://localhost:3000/don/All";
+					this.axios.get(url).then((res)=>{
+							console.log(res);
+							this.dons= res.data
+					}
+					)
+			},
     //processFile(event){
 	//	this.someData = event.target.files[0]
 	//},
@@ -96,16 +105,16 @@ export default {
 
             this.axios.post("http:/localhost:3000/don/newdon",this.don)
             .then((res)=>{
-              console.log(res)  
+              console.log(res)
             })
             .catch(err =>{
                 console.log(err)
             })
         }
     },
-    
+
 }
 </script>
 <style scoped>
-    
+
 </style>

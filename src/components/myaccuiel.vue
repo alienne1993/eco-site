@@ -52,6 +52,6 @@ export default {
 </script>
 <style scoped>
 #carousel-1{
-  width:900px;
+  width:100%;
 }
 </style>

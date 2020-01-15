@@ -18,7 +18,9 @@ import myfooter from './components/myfooter';
 
 export default {
  data () {
+   return{
 
+   }
  },
   components:{
     navtemplate,

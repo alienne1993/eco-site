@@ -1,5 +1,6 @@
 <template>
-    <div >
+    <div>
+        <div class="row">
         <h1>Présentation et évolution du produit</h1>
         <p></p>
 <h6>Catégorie:</h6>
@@ -18,7 +19,7 @@
         <h3>photo des produits:</h3>
         </div>
             
-
+        </div>
     </div>
 </template>
 

@@ -21,7 +21,7 @@ export default {
     },
     created() {
 
-        this.contient.push(JSON.parse(localStorage.getItem("panierStorage")))
+        this.contient = JSON.parse(localStorage.getItem("panierStorage"));
 
     },
     methods:{

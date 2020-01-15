@@ -1,7 +1,7 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-import router from "./router"
-import axios from "axios"
+import Vue from 'vue';
+import Vuex from 'vuex';
+import router from "./router";
+import axios from "axios";
 
 Vue.use(Vuex);
 
@@ -31,23 +31,24 @@ export default new Vuex.Store({
         doLogin: function ({commit}, loginData) {
             commit('loginStart');
 
-            axios.post('http://localhost:3000/client/login', {
+            axios.post('http://localhost:3000/client/login',{
                 ...loginData
             })
                 .then((response) => {
                   // eslint-disable-next-line no-console
-                  console.log(response)
-                    localStorage.setItem('accessToken', response.data["token"]);
+                  console.log(response);
+                    localStorage.setItem('accessToken', response.data.token);
                     commit('loginStop', null);
-                    commit('updateAccessToken', response.data["token"]);
+                    commit('updateAccessToken', response.data.token);
                     router.push('/');
+                    window.location.reload();
                 })
                 .catch(error => {
                     // eslint-disable-next-line no-console
                     console.log(error);
                     commit('loginStop', error);
                     commit('updateAccessToken', null);
-                })
+                });
         },
         fetchAccessToken({commit}) {
             commit('updateAccessToken', localStorage.getItem('accessToken'));
@@ -56,7 +57,9 @@ export default new Vuex.Store({
             localStorage.removeItem('accessToken');
             commit('logout');
             router.push('/');
+            window.location.reload();
+
         }
     },
     modules: {}
-})
+});
