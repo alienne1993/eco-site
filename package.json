@@ -15,7 +15,7 @@
     "braintree-web": "^3.55.0",
     "card": "^2.4.0",
     "core-js": "^2.6.5",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jshint": "^2.10.3",
     "mdbvue": "^5.8.3",
     "nodemailer": "^6.3.1",
